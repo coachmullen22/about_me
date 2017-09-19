@@ -2,7 +2,7 @@
 
 var userName = prompt('What is your name?');
 
-alert('Hi, ' + userName + ' it\'s nice to meet you. Answer these questions for a cookie.');
+alert('Hi, ' + userName + ' thank you for checking out my bio page!');
 
 //Question 1
 
@@ -15,4 +15,13 @@ if (answer1 === 'n' || answer1 === 'no') {
 } else {
     // Tell the user they are wrong
   alert('You\'re very wrong');
+}
+
+var answer2 = prompt('Do I like the Mariners?').toLowerCase();
+console.log('answer2 is', answer2);
+
+if (answer2 === 'n' || answer2 === 'no') {
+  alert('It may be hard to believe but I love my Mariners!');
+} else {
+  alert('I can\'t help myself. The Mariners have put me through too much misery for me to give up on them now...')
 }
