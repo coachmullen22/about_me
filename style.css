@@ -7,8 +7,18 @@
 }
 */
 h1, h2 {
-  color: rgb(25, 195, 60);
+  color: rgb(25, 225, 60);
   text-align: center;
+  min-width: 300px;
+  max-width: 400px
+}
+
+p {
+  min-width: 300px;
+  max-width: 400px;
+  padding: 5px;
+  text-indent: 10px;
+  text-align: justify;
 }
 
 .bio {
@@ -18,14 +28,14 @@ h1, h2 {
 }
 
 .goals {
-  border: 1px solid rgb(125, 50, 125);
-  background-color: rgb(15, 55, 40);
+  border: 1px solid rgb(125, 30, 65);
+  background-color: rgb(45, 35, 40);
   padding: inherit;
+  color: grey;
 }
 
-p {
-  min-width: 300px;
-  max-width: 400px;
-  padding: 5px;
-  overflow: scroll;
+.values {
+  border: 5px solid rgb(125, 50, 125);
+  background-color: rgb(25, 150, 150);
+  padding: inherit;
 }

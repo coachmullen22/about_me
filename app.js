@@ -11,10 +11,8 @@ var siblings = prompt('Do I have any sisters?').toLowerCase();
 console.log('Value of siblings is', siblings);
 
 if (siblings === 'n' || siblings === 'no') {
-  // Tell the user they are correct
   alert('I actually have three sisters. And although they were sometimes hard on me, I wouldn\'t have traded any one of them for a brother...most of the time...');
 } else {
-    // Tell the user they are wrong
   alert('That\'s right. I have three amazing sisters. I\'m very lucky to have them!');
 }
 
