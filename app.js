@@ -1,7 +1,7 @@
 'use strict';
 
 var userName = prompt('What is your name?');
-console.log('Value of userName is', userName);
+//console.log('Value of userName is' userName);
 
 alert('Hi, ' + userName + ' thank you for visiting my bio page! To help you get to know me better, why don\'t we play a little Q&A game. I\'m going to ask you a series of questions and I\'ll keep track of how many you can guess correctly. Please answer "Yes" or "No" unless otherwise prompted. Good luck!');
 
@@ -20,7 +20,7 @@ question1();
 
 //Question 2
 
-function quesion2() {
+function question2() {
   var spoiledNephews = prompt('I\'m also fortunate to have two little nephews. Do you think I\'m the type of uncle who would spoil them?').toLowerCase();
   console.log('Value of spoiledNephews is', spoiledNephews);
 
@@ -76,53 +76,49 @@ question5();
 //Array for Questions 6 and 7
 var statesNotVisited = ['Alaska', 'Hawaii', 'Utah', 'North Dakota', 'Kansas', 'Oklahoma', 'Minnesota', 'Michigan', 'Alabama', 'Georgia', 'South Carolina', 'North Carolina', 'Delaware', 'Connecticut', 'Rhode Island', 'Vermont', 'New Hampshire', 'Maine'];
 console.log(statesNotVisited.length);
-var statesVisitedCount = [50 - statesNotVisited.length];
+var statesVisitedCount = (50 - statesNotVisited.length);
 console.log(statesVisitedCount);
 var guessesLeft = 4;
 
 //Question 6
-while (guessesLeft > 0) {
-  var stateCount = parseInt(prompt('My next question is a little bit harder so I\'ll give you four chances and maybe even a few clues to help you out. In my lifetime I\'ve taken road trips from coast to coast, and from the Canadian border to the southern border. How many total states do you think I\'ve set foot in?'))
-  guessesLeft --;
-  if (stateCount === NaN);
-  alert('I think you made a mistake. Let me suggest entering a number between 1 and 50.');
-} else if {
-  (stateCount > statesVisitedCount);
-  alert('That\'s a little bit high.  Try a smaller number. You have ' + guessesLeft + ' remaining');
-} else if {
-  (stateCount < statesVisitedCount);
-  alert('I\'ve travelled to more states than that! Try a larger number. You have ' + guessesLeft + ' remaining');
-} else {
-  prompt('You\'re amazing, ' + userName + '!!! You got it right!');
-  break;
+function question6() {
+  while (guessesLeft > 0) {
+    var stateCount = parseInt(prompt('My next question is a little bit harder so I\'ll give you four chances and maybe even a few clues to help you out. In my lifetime I\'ve taken road trips from coast to coast, and from the Canadian border to the southern border. How many total states do you think I\'ve set foot in?'))
+    guessesLeft--;
 
-  if (guessesLeft === 0) {
-    prompt('I\'m sorry. You are a bad guesser.')
-  }
-
-}
-
-//counter ==5;
-
-
-  } else if (stateCount > statesVisitedCount) {
-
-    } else {
+    if (stateCount > 50 || stateCount < 1 || isNaN(stateCount)) {
+    alert('I think you made a mistake. Let me suggest entering a number between 1 and 50. You have ' + guessesLeft + ' remaining');
+    }
+    else if (stateCount > statesVisitedCount) {
+    alert('That\'s a little bit high.  Try a smaller number. You have ' + guessesLeft + ' remaining');
+    }
+    else if (stateCount < statesVisitedCount) {
+    alert('I\'ve travelled to more states than that! Try a larger number. You have ' + guessesLeft + ' remaining');
+    }
+    else {
+    alert('You\'re amazing, ' + userName + '!!! You got it right!');
+    break;
+    }
+    if (guessesLeft === 0) {
+      alert('I\'m sorry. You are a bad guesser.');
     }
   }
+}
+question6();
+//counter ==5;
 
 //Question 7
 
 
-var statesToVisit = prompt('There are only 18 states that I have NOT visited yet. I\'ll give you six chances to guess any of the states I still need to visit. Be careful, proper spelling matters.');
-
-for (var i = 0; i < 7; i++) {
-  //counter !==7;
-  do while (i < 7) {
-    if (statesToVisit === statesNotVisited[i]) {
-      prompt('Congratulations, ' + userName + '! You guessed one of the states I hope to see someday. The other states I still need to see are');
-    }
-  } else if {
-    alert('Try again.');
-  }
-}
+// var statesToVisit = prompt('There are only 18 states that I have NOT visited yet. I\'ll give you six chances to guess any of the states I still need to visit. Be careful, proper spelling matters.');
+//
+// for (var i = 0; i < 7; i++) {
+//   //counter !==7;
+//   do while (i < 7) {
+//     if (statesToVisit === statesNotVisited[i]) {
+//       prompt('Congratulations, ' + userName + '! You guessed one of the states I hope to see someday. The other states I still need to see are');
+//     }
+//   } else if {
+//     alert('Try again.');
+//   }
+// }
