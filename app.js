@@ -15,7 +15,7 @@ function question1() {
   } else {
     alert('That\'s right. I have three amazing sisters. I\'m very lucky to have them!');
   }
-  }
+}
 question1();
 
 //Question 2
@@ -29,7 +29,7 @@ function quesion2() {
   } else {
     alert('Well, I only spoil them a little bit. Mostly I try to explore the world with them. It\'s fun seeing the world through their eyes.');
   }
-  }
+}
 question2();
 
 //Question 3
@@ -43,18 +43,21 @@ function question3() {
   } else {
     alert('You\'re right! I got to take batting practice in the Kingdome with a highschool team I coached.  I actually snuck into the Mariners locker room and sat in Ken Griffey Jr\'s fancy recliner chair. I\'m not sure why it was there, but he had a baseball card of Matt Sinatro pinned to his locker...that\'s right, Matt Sinatro.');
   }
-  }
+}
 question3();
 
 //Question 4
-var marinersFan = prompt('Do I like the Mariners?').toLowerCase();
-console.log('Value of marinersFan is', marinersFan);
+function question4() {
+  var marinersFan = prompt('Do I like the Mariners?').toLowerCase();
+  console.log('Value of marinersFan is', marinersFan);
 
-if (marinersFan === 'n' || marinersFan === 'no') {
-  alert(userName +', you are correct...sort of. I don\'t just like the Mariners, I love my Mariners!');
-} else {
-  alert('Of course I do! I grew up loving the Mariners. Even though they cause me great pain, there\'s no sense changing horses in mid-stream');
+  if (marinersFan === 'n' || marinersFan === 'no') {
+    alert(userName +', you are correct...sort of. I don\'t just like the Mariners, I love my Mariners!');
+  } else {
+    alert('Of course I do! I grew up loving the Mariners. Even though they cause me great pain, there\'s no sense changing horses in mid-stream');
+  }
 }
+question4();
 
 //Question 5
 var birthPlace = prompt('Although I grew up rooting for the Mariners, I haven\'t always lived in Seattle. Do you think I was born in a state located west of the Mississippi River?').toLowerCase();
