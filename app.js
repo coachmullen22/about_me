@@ -58,27 +58,38 @@ if (birthPlace === 'n' || birthPlace === 'no') {
 //Array for Questions 6 and 7
 var statesNotVisited = ['Alaska', 'Hawaii', 'Utah', 'North Dakota', 'Kansas', 'Oklahoma', 'Minnesota', 'Michigan', 'Alabama', 'Georgia', 'South Carolina', 'North Carolina', 'Delaware', 'Connecticut', 'Rhode Island', 'Vermont', 'New Hampshire', 'Maine'];
 console.log(statesNotVisited.length);
-
-var statesVisitedCount = (50 - statesNotVisited.length);
+var statesVisitedCount = [50 - statesNotVisited.length];
 console.log(statesVisitedCount);
+var guessesLeft = 4;
 
 //Question 6
-var stateCount = prompt('My next question is a little bit harder so I\'ll give you four chances and maybe even a few clues to help you out. In my lifetime I\'ve taken road trips from coast to coast, and from the Canadian border to the southern border. How many total states do you think I\'ve set foot in?');
+while (guessesLeft > 0) {
+  var stateCount = parseInt(prompt('My next question is a little bit harder so I\'ll give you four chances and maybe even a few clues to help you out. In my lifetime I\'ve taken road trips from coast to coast, and from the Canadian border to the southern border. How many total states do you think I\'ve set foot in?'))
+  guessesLeft --;
+  if (stateCount === NaN);
+  alert('I think you made a mistake. Let me suggest entering a number between 1 and 50.');
+} else if {
+  (stateCount > statesVisitedCount);
+  alert('That\'s a little bit high.  Try a smaller number. You have ' + guessesLeft + ' remaining');
+} else if {
+  (stateCount < statesVisitedCount);
+  alert('I\'ve travelled to more states than that! Try a larger number. You have ' + guessesLeft + ' remaining');
+} else {
+  prompt('You\'re amazing, ' + userName + '!!! You got it right!');
+  break;
 
-for (var i = 0; i < 5; i++) {
-//counter !==5;
+  if (guessesLeft === 0) {
+    prompt('I\'m sorry. You are a bad guesser.')
+  }
 
-  if (stateCount === statesVisitedCount
-) {
-    prompt('You\'re amazing, ' + userName + '!!! You got it right!');
-    break;
+}
 
-  } else if (stateCount > statesVisitedCount
-) {
-      alert('That\'s a little bit high.  Try a smaller number...');
+//counter ==5;
+
+
+  } else if (stateCount > statesVisitedCount) {
 
     } else {
-      alert('I\'ve travelled to more states than that! Try a larger number...');
     }
   }
 
