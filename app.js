@@ -19,14 +19,18 @@ function question1() {
 question1();
 
 //Question 2
-var spoiledNephews = prompt('I\'m also fortunate to have two little nephews. Do you think I\'m the type of uncle who would spoil them?').toLowerCase();
-console.log('Value of spoiledNephews is', spoiledNephews);
 
-if (spoiledNephews === 'n' || spoiledNephews === 'no') {
-  alert('Well, my sister\'s don\'t like it very much, but I actually do spoil them. If you could see those two, you would do the same thing. They\'re the cutest little guys ever!');
-} else {
-  alert('Well, I only spoil them a little bit. Mostly I try to explore the world with them. It\'s fun seeing the world through their eyes.');
-}
+function quesion2() {
+  var spoiledNephews = prompt('I\'m also fortunate to have two little nephews. Do you think I\'m the type of uncle who would spoil them?').toLowerCase();
+  console.log('Value of spoiledNephews is', spoiledNephews);
+
+  if (spoiledNephews === 'n' || spoiledNephews === 'no') {
+    alert('Well, my sister\'s don\'t like it very much, but I actually do spoil them. If you could see those two, you would do the same thing. They\'re the cutest little guys ever!');
+  } else {
+    alert('Well, I only spoil them a little bit. Mostly I try to explore the world with them. It\'s fun seeing the world through their eyes.');
+  }
+  }
+question2();
 
 //Question 3
 var hasHitStadium = prompt('Have I ever hit a baseball in a Major League stadium?').toLowerCase();
