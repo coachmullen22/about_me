@@ -60,14 +60,18 @@ function question4() {
 question4();
 
 //Question 5
-var birthPlace = prompt('Although I grew up rooting for the Mariners, I haven\'t always lived in Seattle. Do you think I was born in a state located west of the Mississippi River?').toLowerCase();
-console.log('value of birthPlace is', birthPlace);
 
-if (birthPlace === 'n' || birthPlace === 'no') {
-  alert('You are correct, ' + userName + ', I was born in Jacksonville, Illinois. Jacksonville is the home of the Big Eli Ferris Wheel Company...and me.');
-} else {
-  alert('Close but no cigar. I was actually born just east of the Mississippi River in Jacksonville, Illinois. But I\'ve lived in Seattle since I was three, so I might as well be a native.');
+function question5() {
+  var birthPlace = prompt('Although I grew up rooting for the Mariners, I haven\'t always lived in Seattle. Do you think I was born in a state located west of the Mississippi River?').toLowerCase();
+  console.log('value of birthPlace is', birthPlace);
+
+  if (birthPlace === 'n' || birthPlace === 'no') {
+    alert('You are correct, ' + userName + ', I was born in Jacksonville, Illinois. Jacksonville is the home of the Big Eli Ferris Wheel Company...and me.');
+  } else {
+    alert('Close but no cigar. I was actually born just east of the Mississippi River in Jacksonville, Illinois. But I\'ve lived in Seattle since I was three, so I might as well be a native.');
+  }
 }
+question5();
 
 //Array for Questions 6 and 7
 var statesNotVisited = ['Alaska', 'Hawaii', 'Utah', 'North Dakota', 'Kansas', 'Oklahoma', 'Minnesota', 'Michigan', 'Alabama', 'Georgia', 'South Carolina', 'North Carolina', 'Delaware', 'Connecticut', 'Rhode Island', 'Vermont', 'New Hampshire', 'Maine'];
