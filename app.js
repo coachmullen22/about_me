@@ -55,31 +55,45 @@ if (birthPlace === 'n' || birthPlace === 'no') {
   alert('Close but no cigar. I was actually born just east of the Mississippi River in Jacksonville, Illinois. But I\'ve lived in Seattle since I was three, so I might as well be a native.');
 }
 
-//Questions 6 and 7 array
+//Array for Questions 6 and 7
 var statesNotVisited = ['Alaska', 'Hawaii', 'Utah', 'North Dakota', 'Kansas', 'Oklahoma', 'Minnesota', 'Michigan', 'Alabama', 'Georgia', 'South Carolina', 'North Carolina', 'Delaware', 'Connecticut', 'Rhode Island', 'Vermont', 'New Hampshire', 'Maine'];
 console.log(statesNotVisited.length);
 
-var statesVisited = (50 - statesNotVisited.length);
-console.log(statesVisited);
+var statesVisitedCount = (50 - statesNotVisited.length);
+console.log(statesVisitedCount);
 
 //Question 6
-var statesVisited = prompt('My next question is a little bit harder so I\'ll give you four chances and maybe even a few clues to help you out. In my lifetime I\'ve taken road trips from coast to coast, and from the Canadian border to the southern border. How many total states do you think I\'ve set foot in?');
+var stateCount = prompt('My next question is a little bit harder so I\'ll give you four chances and maybe even a few clues to help you out. In my lifetime I\'ve taken road trips from coast to coast, and from the Canadian border to the southern border. How many total states do you think I\'ve set foot in?');
 
 for (var i = 0; i < 5; i++) {
-  if (statesVisited === statesVisited) {
+//counter !==5;
+
+  if (stateCount === statesVisitedCount
+) {
     prompt('You\'re amazing, ' + userName + '!!! You got it right!');
-  } else {
-    if (statesNotVisited > statesNotVisited.length) {
+    break;
+
+  } else if (stateCount > statesVisitedCount
+) {
       alert('That\'s a little bit high.  Try a smaller number...');
+
     } else {
-      if (statesNotVisited < statesNotVisited.length) {
-      alert('I\'ve travelled more than that! Try a larger number...');
+      alert('I\'ve travelled to more states than that! Try a larger number...');
+    }
+  }
 
 //Question 7
-//var statesNotVisited =  prompt('There are only 18 states that I have NOT visited yet. I\'ll give you six chances to guess any of the states I still need to visit. Some of them might surprise you...');
 
-/*for (statesNotVisited) {
-  statesNotVisited = prompt('Congratulations, ' + userName + '! You guessed one of the states I\'m looking forward to checking out. The other states I still ned to see are' + console.log(statesNotVisited[i]))
-} else {
 
-}*/
+var statesToVisit = prompt('There are only 18 states that I have NOT visited yet. I\'ll give you six chances to guess any of the states I still need to visit. Be careful, proper spelling matters.');
+
+for (var i = 0; i < 7; i++) {
+  //counter !==7;
+  do while (i < 7) {
+    if (statesToVisit === statesNotVisited[i]) {
+      prompt('Congratulations, ' + userName + '! You guessed one of the states I hope to see someday. The other states I still need to see are');
+    }
+  } else if {
+    alert('Try again.');
+  }
+}
