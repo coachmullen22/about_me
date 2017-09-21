@@ -6,14 +6,17 @@ console.log('Value of userName is', userName);
 alert('Hi, ' + userName + ' thank you for visiting my bio page! To help you get to know me better, why don\'t we play a little Q&A game. I\'m going to ask you a series of questions and I\'ll keep track of how many you can guess correctly. Please answer "Yes" or "No" unless otherwise prompted. Good luck!');
 
 //Question 1
-var siblings = prompt('Here\'s the first question. Do you think I have any sisters?').toLowerCase();
-console.log('Value of siblings is', siblings);
+function question1() {
+  var siblings = prompt('Here\'s the first question. Do you think I have any sisters?').toLowerCase();
+  console.log('Value of siblings is', siblings);
 
-if (siblings === 'n' || siblings === 'no') {
-  alert('I actually have three sisters. And although they were sometimes hard on me, I wouldn\'t have traded any one of them for a brother...most of the time...');
-} else {
-  alert('That\'s right. I have three amazing sisters. I\'m very lucky to have them!');
-}
+  if (siblings === 'n' || siblings === 'no') {
+    alert('I actually have three sisters. And although they were sometimes hard on me, I wouldn\'t have traded any one of them for a brother...most of the time...');
+  } else {
+    alert('That\'s right. I have three amazing sisters. I\'m very lucky to have them!');
+  }
+  }
+question1();
 
 //Question 2
 var spoiledNephews = prompt('I\'m also fortunate to have two little nephews. Do you think I\'m the type of uncle who would spoil them?').toLowerCase();
