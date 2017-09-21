@@ -1,5 +1,5 @@
 'use strict';
-
+//reminder to add a counter
 var userName = prompt('What is your name?');
 //console.log('Value of userName is' userName);
 
@@ -105,20 +105,34 @@ function question6() {
   }
 }
 question6();
-//counter ==5;
+
 
 //Question 7
+function question7(){
+  guessesLeft = 6;
+
+  while(guessesLeft > 0) {
+    var statesToVisit = prompt('There are only 18 states that I have NOT visited yet. I\'ll give you six chances to guess any of the states I still need to visit. Be careful, proper spelling matters.');
+    guessesLeft--;
+    if (statesNotVisited.includes(statesToVisit)) {
+      alert('Congratulations');
+      guessesLeft = -1;
+    }
+    if (guessesLeft > 0) {
+      alert('Try again. You only have ' + guessesLeft + ' guesses left.');
+    }
+    if (guessesLeft === 0) {
+      alert('You tried and failied miserably!  My next roadtrip will include Alaska, Hawaii, Utah, North Dakota, Kansas, Oklahoma, Minnesota, Michigan, Alabama, Georgia, South Carolina, North Carolina, Delaware, Connecticut, Rhode Island, Vermont, New Hampshire, and Maine.');
+    }
+
+  }
+}
+question7();
 
 
-// var statesToVisit = prompt('There are only 18 states that I have NOT visited yet. I\'ll give you six chances to guess any of the states I still need to visit. Be careful, proper spelling matters.');
-//
-// for (var i = 0; i < 7; i++) {
-//   //counter !==7;
-//   do while (i < 7) {
-//     if (statesToVisit === statesNotVisited[i]) {
-//       prompt('Congratulations, ' + userName + '! You guessed one of the states I hope to see someday. The other states I still need to see are');
-//     }
-//   } else if {
-//     alert('Try again.');
-//   }
-// }
+
+
+
+
+
+      // alert('Congratulations, ' + userName + '! You guessed one of the states I hope to see someday. The other states I still need to see are');
