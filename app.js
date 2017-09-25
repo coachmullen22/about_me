@@ -1,6 +1,18 @@
 'use strict';
+
+
 //reminder to add a counter
+
+var add = (function() {
+  var counter = 0;
+  return function () {return counter += 1;}
+})();
+
+
+  var totalQuestions = totalQuestions
+
 var userName = prompt('What is your name?');
+
 //console.log('Value of userName is' userName);
 
 alert('Hi, ' + userName + ' thank you for visiting my bio page! To help you get to know me better, why don\'t we play a little Q&A game. I\'m going to ask you a series of questions and I\'ll keep track of how many you can guess correctly. Please answer "Yes" or "No" unless otherwise prompted. Good luck!');
@@ -14,6 +26,7 @@ function question1() {
     alert('I actually have three sisters. And although they were sometimes hard on me, I wouldn\'t have traded any one of them for a brother...most of the time...');
   } else {
     alert('That\'s right. I have three amazing sisters. I\'m very lucky to have them!');
+
   }
 }
 question1();
@@ -90,10 +103,10 @@ function question6() {
     alert('I think you made a mistake. Let me suggest entering a number between 1 and 50. You have ' + guessesLeft + ' remaining');
     }
     else if (stateCount > statesVisitedCount) {
-    alert('That\'s a little bit high.  Try a smaller number. You have ' + guessesLeft + ' remaining');
+    alert('That\'s a little bit high.  Try a smaller number. Guesses remaining: ' + guessesLeft);
     }
     else if (stateCount < statesVisitedCount) {
-    alert('I\'ve travelled to more states than that! Try a larger number. You have ' + guessesLeft + ' remaining');
+    alert('I\'ve travelled to more states than that! Try a larger number. Guesses remaining: ' + guessesLeft);
     }
     else {
     alert('You\'re amazing, ' + userName + '!!! You got it right!');
@@ -115,16 +128,16 @@ function question7(){
     var statesToVisit = prompt('There are only 18 states that I have NOT visited yet. I\'ll give you six chances to guess any of the states I still need to visit. Be careful, proper spelling matters.');
     guessesLeft--;
     if (statesNotVisited.includes(statesToVisit)) {
-      alert('Congratulations');
+      alert('Congratulations, you\'re highly intuitive!');
       guessesLeft = -1;
     }
     if (guessesLeft > 0) {
       alert('Try again. You only have ' + guessesLeft + ' guesses left.');
     }
     if (guessesLeft === 0) {
-      alert('You tried and failied miserably!  My next roadtrip will include Alaska, Hawaii, Utah, North Dakota, Kansas, Oklahoma, Minnesota, Michigan, Alabama, Georgia, South Carolina, North Carolina, Delaware, Connecticut, Rhode Island, Vermont, New Hampshire, and Maine.');
+      alert('You tried, but you failed miserably!  My next roadtrip will include Alaska, Hawaii, Utah, North Dakota, Kansas, Oklahoma, Minnesota, Michigan, Alabama, Georgia, South Carolina, North Carolina, Delaware, Connecticut, Rhode Island, Vermont, New Hampshire, and Maine.');
     }
-
+alert('Your final score is' + totalScore + ' out of ' + totalQuestions)
   }
 }
 question7();
