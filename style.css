@@ -13,7 +13,7 @@ h1, h2 {
   max-width: 400px
 }
 
-p {
+p li {
   min-width: 300px;
   max-width: 400px;
   padding: 5px;
